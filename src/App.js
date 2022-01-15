@@ -37,9 +37,16 @@ class App extends Component {
 
   handleSort = (sortKey, isDes) => {
     let { menuItems } = this.state;
-    let sortedData = menuItems.sort((a, b) => {
-      return a[sortKey] < b[sortKey] || isDes ? -1 : 1;
-    });
+    let sortedData;
+    if (isDes) {
+      sortedData = menuItems.sort((a, b) => {
+        return a[sortKey] < b[sortKey] ? 1 : -1;
+      });
+    } else {
+      sortedData = menuItems.sort((a, b) => {
+        return a[sortKey] < b[sortKey] ? -1 : 1;
+      });
+    }
 
     this.setState({ menuItems: sortedData });
   }

@@ -1,4 +1,4 @@
-# Getting Started with Activity-1 Bakery Menu
+# Activity-1 Bakery Menu
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Get Started

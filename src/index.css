@@ -22,7 +22,7 @@ body {
 }
 
 
-input[type=text] {
+input[type=text], input[type=number] {
   padding: 0.25rem;
   box-sizing: border-box;
 }
@@ -59,13 +59,13 @@ th, td{
 }
 
 th.des::after {
-  content: '👇';
+  content: '⬆️';
   display: inline-block;
   margin-left: 1em;
 }
 
 th.asc::after {
-  content: '☝️';
+  content: '⬇️';
   display: inline-block;
   margin-left: 1em;
 }

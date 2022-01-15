@@ -38,7 +38,7 @@ class NewItemForm extends Component {
                 <form onSubmit={this.onFormSubmit}>
                     <div className="row">
                         <label htmlFor="id">ID</label>
-                        <input type="text" name="id" id="id" value={id} onChange={this.handleInput}></input>
+                        <input type="number" name="id" id="id" value={id} onChange={this.handleInput}></input>
                     </div>
                     <div className="row">
                         <label htmlFor="type">Type</label>

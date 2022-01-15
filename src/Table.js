@@ -14,14 +14,12 @@ class Table extends Component {
     }
 
     handleClick(sortKey) {
-        let { sortField, isDes } = this.state;
-        this.setState({ sortField: sortKey });
+        let { isDes } = this.state;
+        this.setState({
+            sortField: sortKey,
+            isDes: !isDes
+        });
         this.props.handleSort(sortKey, isDes);
-        if (sortKey = sortField) {
-            this.setState(prevstate => ({ isDes: !prevstate.isDes }));
-        } else {
-            this.setState({ isDes: true });
-        }
     }
 
     handleClassName(clickField) {
@@ -35,7 +33,6 @@ class Table extends Component {
 
     render() {
         const { menuData } = this.props;
-        const { sortField } = this.state;
         return (
             <table className='table'>
                 <thead>

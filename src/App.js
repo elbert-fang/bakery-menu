@@ -9,7 +9,8 @@ class App extends Component {
     super(props);
 
     this.initialState = {
-      menuItems: data
+      menuItems: data,
+
     };
 
     this.state = this.initialState;
@@ -23,8 +24,7 @@ class App extends Component {
   }
 
   handleSearch = (search) => {
-    let { menuItems } = this.state;
-    let filteredData = menuItems.filter(value => {
+    let filteredData = data.filter(value => {
       return (
         value.id.toLowerCase().includes(search.toLowerCase()) ||
         value.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -40,11 +40,11 @@ class App extends Component {
     let sortedData;
     if (isDes) {
       sortedData = menuItems.sort((a, b) => {
-        return a[sortKey] < b[sortKey] ? 1 : -1;
+        return a[sortKey] < b[sortKey] ? -1 : 1;
       });
     } else {
       sortedData = menuItems.sort((a, b) => {
-        return a[sortKey] < b[sortKey] ? -1 : 1;
+        return a[sortKey] < b[sortKey] ? 1 : -1;
       });
     }
 

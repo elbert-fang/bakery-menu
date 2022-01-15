@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/illu5ion-cje/bakery-menu/static/css/main.759f4bed.css",
+    "main.js": "/illu5ion-cje/bakery-menu/static/js/main.62f84287.js",
+    "index.html": "/illu5ion-cje/bakery-menu/index.html",
+    "main.759f4bed.css.map": "/illu5ion-cje/bakery-menu/static/css/main.759f4bed.css.map",
+    "main.62f84287.js.map": "/illu5ion-cje/bakery-menu/static/js/main.62f84287.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.759f4bed.css",
+    "static/js/main.62f84287.js"
+  ]
+}

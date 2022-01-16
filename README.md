@@ -1,5 +1,6 @@
 # Activity-1 Bakery Menu
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can view it [Here](https://affectionate-davinci-0f15d9.netlify.app/).
 
 ## Get Started
 

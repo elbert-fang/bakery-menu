@@ -8,15 +8,13 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.initialState = {
+    this.state = {
       menuItems: data,
-
     };
-
-    this.state = this.initialState;
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
+    this.handleSort = this.handleSort.bind(this);
   }
 
   handleSubmit = (newItem) => {
@@ -38,6 +36,7 @@ class App extends Component {
   handleSort = (sortKey, isDes) => {
     let { menuItems } = this.state;
     let sortedData;
+
     if (isDes) {
       sortedData = menuItems.sort((a, b) => {
         return a[sortKey] < b[sortKey] ? -1 : 1;

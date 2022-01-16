@@ -24,12 +24,8 @@ class Table extends Component {
 
     handleClassName(clickField) {
         let { sortField, isDes } = this.state;
-        if (clickField === sortField) {
-            return isDes ? 'des' : 'asc';
-        }
-        return '';
+        return (clickField === sortField) ? (isDes ? 'des' : 'asc') : '';
     }
-
 
     render() {
         const { menuData } = this.props;
@@ -37,10 +33,10 @@ class Table extends Component {
             <table className='table'>
                 <thead>
                     <tr>
-                        <th className={this.handleClassName('id')} name="id" onClick={e => this.handleClick('id')}>ID</th>
-                        <th className={this.handleClassName('type')} name="type" onClick={e => this.handleClick('type')}>Type</th>
-                        <th className={this.handleClassName('name')} name="name" onClick={e => this.handleClick('name')}>Name</th>
-                        <th className={this.handleClassName('topping')} name="topping" onClick={e => this.handleClick('topping')}>Topping</th>
+                        <th className={this.handleClassName('id')} onClick={() => this.handleClick('id')}>ID</th>
+                        <th className={this.handleClassName('type')} onClick={() => this.handleClick('type')}>Type</th>
+                        <th className={this.handleClassName('name')} onClick={() => this.handleClick('name')}>Name</th>
+                        <th className={this.handleClassName('topping')} onClick={() => this.handleClick('topping')}>Topping</th>
                     </tr>
                 </thead>
 

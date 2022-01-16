@@ -12,6 +12,8 @@ class NewItemForm extends Component {
         };
 
         this.state = this.initialState;
+        this.handleInput = this.handleInput.bind(this);
+        this.onFormSubmit = this.onFormSubmit.bind(this);
     }
 
     handleInput = event => {
@@ -22,7 +24,6 @@ class NewItemForm extends Component {
     }
 
     onFormSubmit = (event) => {
-        // disable browser default acitivities
         event.preventDefault();
         this.props.handleSubmit(this.state);
         this.setState(this.initialState);
@@ -34,7 +35,7 @@ class NewItemForm extends Component {
 
         return (
             <div className='new-item-form'>
-                <h3> Add New Item</h3>
+                <h3>Add New Item</h3>
                 <form onSubmit={this.onFormSubmit}>
                     <div className="row">
                         <label htmlFor="id">ID</label>

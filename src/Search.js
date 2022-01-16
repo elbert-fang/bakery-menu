@@ -7,6 +7,7 @@ class Search extends Component {
             search: ''
         };
         this.state = this.initialState;
+        this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange = event => {

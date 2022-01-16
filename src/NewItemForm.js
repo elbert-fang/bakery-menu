@@ -39,19 +39,19 @@ class NewItemForm extends Component {
                 <form onSubmit={this.onFormSubmit}>
                     <div className="row">
                         <label htmlFor="id">ID</label>
-                        <input type="number" name="id" id="id" value={id} onChange={this.handleInput}></input>
+                        <input type="number" name="id" id="id" value={id} onChange={this.handleInput} required></input>
                     </div>
                     <div className="row">
                         <label htmlFor="type">Type</label>
-                        <input type="text" name="type" id="type" value={type} onChange={this.handleInput}></input>
+                        <input type="text" name="type" id="type" value={type} onChange={this.handleInput} required></input>
                     </div>
                     <div className="row">
                         <label htmlFor="name">Name</label>
-                        <input type="text" name="name" id="name" value={name} onChange={this.handleInput}></input>
+                        <input type="text" name="name" id="name" value={name} onChange={this.handleInput} required></input>
                     </div>
                     <div className="row">
                         <label htmlFor="topping">Topping</label>
-                        <input type="text" name="topping" id="topping" value={topping} onChange={this.handleInput}></input>
+                        <input type="text" name="topping" id="topping" value={topping} onChange={this.handleInput} required></input>
                     </div>
                     <button type="submit">Submit</button>
                 </form>

@@ -1,6 +1,6 @@
 # Activity-1 Bakery Menu
 This project was bootstrapped with Create React App\
-You can view it [Here](https://affectionate-davinci-0f15d9.netlify.app/).
+You can view it [Here](https://mp1-code-testing-bakery-menu.netlify.app/).
 
 ## Get Started
 
